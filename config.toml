@@ -41,6 +41,8 @@ feed_filename = "atom.xml"
 # When set to "true", a feed is automatically generated.
 generate_feed = true
 
+author = "Lucien GHEERBRANT"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -65,6 +67,7 @@ title = "Le site de Lucien Gheerbrant"
 # Sets browser theme color,
 # see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#DC8ADD"
+primary_color_alpha = "rgba(222, 144, 223, 0.2)"
 
 # If the favicon is GIF or not
 animated_favicon = false
@@ -77,13 +80,18 @@ date_format = "%A %e %B %Y"
 # URL to issue tracker
 issues_url = ""
 # URL to website's source code
-source_url = ""
+source_url = "https://gitlab.emse/lucien.gheerbrant/site-pro"
 # Additional stylesheets; expects it to be in the ./static/ directory.
 # If you are using Sass it will be compiled there anyway.
 # stylesheets = [
 #   "YOUR_STYLE.css",
 #   "ALSO_YOUR_STYLE.css"
 # ]
+
+stylesheets = [
+  "custom.css"
+]
+
 
 [extra.nav]
 # Display Atom/RSS feed button in the nav
@@ -93,9 +101,10 @@ icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  #{url = "https://codeberg.org/daudix/duckquill", name = "Repo", icon = "code-slash"},
-  #{url = "$BASE_URL/demo", name = "Demo", icon = "car-front"},
-  #{url = "$BASE_URL/blog", name = "Blog", icon = "journal-bookmark"},
+  {url = "$BASE_URL/profile/resume", name = "📄 Resume"},
+  {url = "$BASE_URL/profile/cover-letter", name = "📝 Cover Letter"},
+  {url = "mailto:lucien.gheerbrant@etu.emse.fr", name = "📧 E-mail"},
+  {url = "https://linkedin.com/in/lucien-gheerbrant", name = "🖇️ LinkedIn"},
 ]
 
 [extra.footer]
