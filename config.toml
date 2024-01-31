@@ -76,7 +76,7 @@ date_format = "%A %e %B %Y"
 # URL to issue tracker
 issues_url = ""
 # URL to website's source code
-source_url = "https://gitlab.emse/lucien.gheerbrant/site-pro"
+source_url = "https://github.com/lusinge/site-pro"
 # Additional stylesheets; expects it to be in the ./static/ directory.
 # If you are using Sass it will be compiled there anyway.
 # stylesheets = [
