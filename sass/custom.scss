@@ -1,4 +1,5 @@
 @use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $primary-color: #DC8ADD;
 $primary-color-alpha: color.scale($primary-color, $alpha: -80%);
@@ -45,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: InterVariable, sans-serif;
+  font-family: Inter, sans-serif;
   font-feature-settings: "ss02";
   font-weight: 900;
 }
