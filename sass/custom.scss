@@ -31,6 +31,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   --nav-bg: #{$nav-bg-l};
   --primary-color-alpha: #{$primary-color-alpha};
   --primary-color: #{$primary-color};
+  font-family: Inter, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
