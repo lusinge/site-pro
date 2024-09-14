@@ -97,7 +97,7 @@ icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "$BASE_URL/profile/resume", name = "📄 Resume"},
+  {url = "@/resume.md", name = "📄 Resume"},
 # {url = "$BASE_URL/profile/cover-letter", name = "📝 Cover Letter"},
   {url = "mailto:lucien.gheerbrant@etu.emse.fr", name = "📧 E-mail"},
   {url = "https://linkedin.com/in/lucien-gheerbrant", name = "🖇️ LinkedIn"},

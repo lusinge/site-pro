@@ -1,7 +1,5 @@
 +++
 title = "Cover Letter"
-date = 2024-01-30
-weight = 1
 +++
 
 Dear Sir or Madam,
