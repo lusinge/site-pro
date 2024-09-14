@@ -17,22 +17,9 @@ compile_sass = true
 build_search_index = false
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
-# Example:
-#     taxonomies = [
-#       {name = "tags", feed = true}, # each tag will have its own feed
-#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
-#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
-#       {name = "authors"}, # Basic definition: no feed or pagination
-#     ]
-#
 taxonomies = [
   {name = "tags", feed = true},
 ]
-
-# The filename to use for the feed. Used as the template filename, too.
-# Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
-# There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filename = "atom.xml"
 
 # When set to "true", a feed is automatically generated.
 generate_feed = false
@@ -90,8 +77,6 @@ stylesheets = [
 
 
 [extra.nav]
-# Display Atom/RSS feed button in the nav
-show_feed = true
 # Whether to use icons in the nav
 icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
