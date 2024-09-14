@@ -21,9 +21,6 @@ taxonomies = [
   {name = "tags", feed = true},
 ]
 
-# When set to "true", a feed is automatically generated.
-generate_feed = false
-
 author = "Lucien GHEERBRANT"
 
 [markdown]
