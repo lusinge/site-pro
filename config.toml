@@ -2,7 +2,7 @@
 base_url = "https://luciengheerbrant.com"
 
 # The site title and description; used in feeds by default.
-title = "Lucien Gheerbrant"
+title = "Lucien's pro website"
 
 # The default language; used in feeds.
 default_language = "en"
@@ -17,9 +17,7 @@ compile_sass = true
 build_search_index = false
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
-taxonomies = [
-  {name = "tags", feed = true},
-]
+taxonomies = [{ name = "tags", feed = true }]
 
 author = "Lucien GHEERBRANT"
 
@@ -41,13 +39,12 @@ highlight_themes_css = [
 smart_punctuation = true
 
 [languages.fr]
-title = "Le site de Lucien Gheerbrant"
+title = "Site pro de Lucien"
 
 [extra]
 # Sets browser theme color,
 # see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#DC8ADD"
-primary_color_alpha = "rgba(222, 144, 223, 0.2)"
 
 # If the favicon is GIF or not
 animated_favicon = false
@@ -68,9 +65,7 @@ source_url = "https://github.com/lusinge/site-pro"
 #   "ALSO_YOUR_STYLE.css"
 # ]
 
-stylesheets = [
-  "custom.css"
-]
+stylesheets = ["custom.css"]
 
 
 [extra.nav]
@@ -79,13 +74,16 @@ icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "@/resume.md", name = "📄 Resume"},
-# {url = "$BASE_URL/profile/cover-letter", name = "📝 Cover Letter"},
-  {url = "mailto:lucien.gheerbrant@etu.emse.fr", name = "📧 E-mail"},
-  {url = "https://linkedin.com/in/lucien-gheerbrant", name = "🖇️ LinkedIn"},
+  { url = "@/resume.md", name = "Resume" },
+  # {url = "$BASE_URL/profile/cover-letter", name = "📝 Cover Letter"},
 ]
 
 [extra.footer]
+socials = [
+  { url = "https://linkedin.com/in/lucien-gheerbrant", name = "Linkedin", icon = "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z'/%3E%3C/svg%3E" },
+	{ url = "mailto:lucien.gheerbrant@etu.emse.fr", name = "e-mail", icon = "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z'/%3E%3C/svg%3E" },
+]
+
 # URL to the website without the https:// part, used for Johnvertisement leaderboard
 johnvert_ref = "luciengheerbrant.com"
 # "© Title, YEAR" in the footer
@@ -96,24 +94,3 @@ show_johnvert = false
 show_powered_by = true
 # Link to website source
 show_source = true
-
-# Based on https://github.com/cassidyjames/cassidyjames.github.io/blob/75cd2a202de7a1026de1ea00a4ef1d5b2675c7ff/_config.yaml#L35-L74
-#
-# Mastodon-powered commenting.
-# Values can be overridden in front-matter, e.g.
-# for multi-author blogs or guest posts.
-#
-# These variables are also used for Mastodon verification,
-# the needed rel="me" link is set in the head based on these.
-[extra.comments]
-# Your Mastodon API host; this should be where you have an account
-host = "mastodon.online"
-# Used to determine who the original/verified poster is;
-# role may be expanded in the future (e.g. for moderation).
-user = "lcnghr"
-# Optional; required to fetch more than 60 replies to any given blog post.
-# Application access token with read:statuses scope; NOTE: IF INCLUDED, ANYONE
-# WILL BE ABLE TO READ THE ASSOCIATED ACCOUNT'S PRIVATE STATUSES. It is highly
-# recommended to use a dedicated bot/API account to create an application with
-# scope read:statuses.
-#token = "jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ"

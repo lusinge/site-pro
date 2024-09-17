@@ -20,5 +20,5 @@
 {% end %}
 </center>
 
-# About me
-I am <mark>Lucien Gheerbrant</mark>, an engineering student of the École des Mines de Saint-Étienne.
+# À propos de moi
+Je suis <mark>Lucien G.</mark>, un élève-ingénieur de l'<mark>**École des Mines de Saint-Étienne** (<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> en double diplôme en Australie à <mark>**Université Technologique de Sydney** (<abbr title="UTS">UTS</abbr>)</mark>.
