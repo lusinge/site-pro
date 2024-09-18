@@ -12,11 +12,12 @@ h4,
 h5,
 h6 {
   font-family: Inter, sans-serif;
-  font-feature-settings: "ss02";
 }
 
 h1{
   font-weight: 900;
+  color: var(--accent-color);
+  text-transform: uppercase;
 }
 
 h2 {
@@ -39,10 +40,15 @@ h6 {
   font-weight: 450;
 }
 
-bio {
-  font-family: InterVariable, sans-serif;
-  font-feature-settings: "ss02";
-  font-style: bold;
-  font-weight: 600;
-  font-size: 1.5em;
+hr {
+	box-shadow: var(--edge-highlight);
+	border: none;
+	border-radius: 999px;
+	background-color: var(--accent-color);
+	width: 50%;
+	height: 0.25rem;
+
+    &::after {
+        display: none;
+    }
 }

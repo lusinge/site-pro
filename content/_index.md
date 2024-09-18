@@ -21,4 +21,4 @@
 </center>
 
 # About me
-I am <mark>Lucien G.</mark>, an engineering student at the <mark>**École des Mines de Saint-Étienne** (<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> in a dual degree at <mark>**University of Technology Sydney** (<abbr title="UTS">UTS</abbr>)</mark>.
+I am <mark>**Lucien G.**</mark>, an engineering student at the <mark>**École&nbsp;des&nbsp;Mines&nbsp;de&nbsp;Saint-Étienne**&nbsp;(<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> in a dual degree at <mark>**University&nbsp;of&nbsp;Technology Sydney**&nbsp;(<abbr title="UTS">UTS</abbr>)</mark>.
