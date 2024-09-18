@@ -1,7 +1,7 @@
 +++
 +++
 
-<center>
+<center style="font-size:1vmax;">
 {% crt() %}
 ```
    _______________                  |*\_/*|________   

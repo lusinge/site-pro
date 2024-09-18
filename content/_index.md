@@ -1,7 +1,7 @@
 +++
 +++
 
-<center>
+<center style="font-size:1vmax;">
 {% crt() %}
 ```
    _______________                  |*\_/*|________   
@@ -21,4 +21,4 @@
 </center>
 
 # About me
-I am <mark>Lucien G.</mark>, an engineering student at the <mark>**École des Mines de Saint-Étienne** (<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> in a dual degree at <mark>**Université Technologique de Sydney** (<abbr title="UTS">UTS</abbr>)</mark>.
+I am <mark>Lucien G.</mark>, an engineering student at the <mark>**École des Mines de Saint-Étienne** (<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> in a dual degree at <mark>**University of Technology Sydney** (<abbr title="UTS">UTS</abbr>)</mark>.
