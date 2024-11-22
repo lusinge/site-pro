@@ -12,12 +12,14 @@ h4,
 h5,
 h6 {
   font-family: Inter, sans-serif;
+  font-feature-settings: "ss02";
 }
 
 h1{
   font-weight: 900;
   color: var(--accent-color);
   text-transform: uppercase;
+  font-feature-settings: "ss02";
 }
 
 h2 {
