@@ -68,9 +68,7 @@ copied = "Copié !"
 copy_code_to_clipboard = "Copier le code dans le presse-papier"
 
 # Footer: Powered by Zola and tabi.
-powered_by = "Propulsé par"
-and = "et"
-site_source = "Code du site"
+powered_by = "Propulsé par $ZOLA et $DUCKQUILL !"
 
 # 404 error.
 # https://welpo.github.io/tabi/404.html
