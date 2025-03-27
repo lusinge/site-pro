@@ -419,7 +419,5 @@ Pooling also enhances the robustness of CNNs by making them less sensitive to sp
 CNNs features parameter sharing, which reduces the number of parameters and overall complexity when compared to MLPs. By sharing weights across different regions of the input, CNNs efficiently learn and recognize features in various parts of the image. This not only contributes to a more compact model but also enhances the network's ability to generalize
 well to new data. This makes CNN less susceptible to overfitting. With fewer parameters to adjust, CNNs are better equipped to discern meaningful features from the data and are less likely to memorize noise or irrelevant patterns during training than MLPs. This aspect contributes to the CNN's robustness and improved performance on unseen data.
 
----
-
 [^golden-rule]: After a web search, I am now aware that there are at least three different golden rules in ML. And that nobody can agree on what is the _golden_ golden rule...
 [^accuracy]: Hey, I need 50% to get my engineer degree. If it works for me, it works for the model.
