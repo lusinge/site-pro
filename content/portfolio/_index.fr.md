@@ -1,4 +1,7 @@
 +++
+title = "Portfolio"
+sort_by = "date"
+template = "article_list.html"
+page_template = "article.html"
+paginate_by = 2
 +++
-
-# 🚧 W.I.P. 🚧

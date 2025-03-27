@@ -37,11 +37,13 @@ highlight_themes_css = [
 # Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
 # For example, `...` into `…`, `"quote"` into `“curly”` etc
 smart_punctuation = true
+bottom_footnotes = true
 
 generate_feeds = false
 
 [languages.fr]
-title = "Site pro de Lucien"
+title = "Le Site Pro de Lucien"
+taxonomies = [{ name = "tags", feed = true }]
 
 [extra]
 # Sets browser theme color,
@@ -70,8 +72,8 @@ styles = ["custom.css"]
 icons = true
 
 links = [
-  { url = "@/resume.md", name = "Resume" },
-  # {url = "$BASE_URL/profile/cover-letter", name = "📝 Cover Letter"},
+  { url = "@/resume/_index.md", name = "Resume" },
+  { url = "@/portfolio/_index.md", name = "Portfolio" },
 ]
 # Whether to show the Atom/RSS feed button in the nav
 show_feed = false
