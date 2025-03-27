@@ -7,6 +7,7 @@ full_stop = "."  # Used at the end of a sentence.
 blog = "blog"
 archive = "archives"
 tags = "étiquettes"
+filter_by_tag = "Filtrer par étiquette"
 projects = "projets"
 about = "à propos"
 contact = "contact"
