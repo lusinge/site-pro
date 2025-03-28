@@ -1,0 +1,1 @@
+/var/home/lucien/Bureau/Développement/site-pro/content/portfolio/wearable-iot-devices/index.md
