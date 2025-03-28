@@ -40,10 +40,13 @@ Have you ever seen a smartwatch lighting up an LED on its back? This is the firs
 There are different approaches to pulse oximetry, as shown in Figure 1, with classical devices (e.g., fingertip pulse oximeters) that directly measure light transmission through a thin body part like the finger (Figure 1a). In comparison, wearable devices like smartwatches use a reflective method, where the light is reflected back from the skin to a sensor (Figure 1b).
 
 <figure>
+<div style="display: flex; justify-content: space-between; gap: 10%;">
+<figure>
     {{
         image(
             url='img/Finger_Pulse_Oximeter.webp',
-            transparent=true        )
+            transparent=true
+        )
     }}
     <figcaption>Fig. 1a: Classical oximetry.</figcaption>
 </figure>
@@ -58,10 +61,10 @@ There are different approaches to pulse oximetry, as shown in Figure 1, with cla
     }}
     <figcaption>Fig. 1b: Apple Watch oximetry.</figcaption>
 </figure>
-
-*Figure 1: Professional VS. consumer $\mathrm{SpO}\_{2}$ tracking.*
-
-The measurement is based on using two different wavelengths of light, typically red and infrared, which are absorbed differently by $\mathrm{HbO}\_{2}$ and $\mathrm{Hb}$. By applying the Beer-Lambert law, which relates the concentration of a substance to the amount of light absorbed, it is possible to determine the relative levels of oxygen in the blood. This technique is widely used due to its ease of implementation and noninvasive nature, requiring only simple interaction between the device and the user via light rays.
+</div>
+<figcaption>Figure 1: Professional VS. consumer $\mathrm{SpO}_{2}$ tracking.</figcaption>
+</figure>
+The measurement is based on using two different wavelengths of light, typically red and infrared, which are absorbed differently by $\mathrm{HbO}_{2}$ and $\mathrm{Hb}$. By applying the Beer-Lambert law, which relates the concentration of a substance to the amount of light absorbed, it is possible to determine the relative levels of oxygen in the blood. This technique is widely used due to its ease of implementation and noninvasive nature, requiring only simple interaction between the device and the user via light rays.
 
 The calculation of $\mathrm{SpO}\_{2}$ relies on a ratio $R$, which is derived from the absorption of red (660 nm) and infrared (905 nm) light by oxygenated and deoxygenated hemoglobin. $R$ is approximately $\frac{\varepsilon(660 \, \text{nm})}{\varepsilon(905 \, \text{nm})}$, with $\varepsilon(\lambda)$ the extinction coefficients of hemoglobin at the $\lambda$ wavelength (red and IR in this case). Using this $R$, we can obtain:
 
@@ -93,14 +96,16 @@ Previously, in earlier designs of wearable sensors, LEDs and photodiodes were of
 <figure>
     {{
         image(
-            url='img/ADPD144RI.webp'
+            url='img/ADPD144RI.webp',
+            transparent=true
         )
     }}
     <figcaption>Fig. 3: Packaging of the ADPD144RI sensor [4].</figcaption>
 </figure>
 
 Figure 3 illustrates an example of this two-in-one package in a compact sensor module, as seen in the ADPD144RI, developed by Analog Devices [4]. The ADPD144RI was specifically designed for use in wearable devices such as fitness trackers and smartwatches, where reducing space and power consumption is essential. Its packaging is optimized for PPG applications like $\mathrm{SpO}\_{2}$ and heart rate monitoring, ensuring reliable performance in compact environments. The module integrates two LEDs (660 nm red and 880 nm IR), along with four photodiodes in an array. The same photodiodes are used to detect light from both wavelengths, with the LEDs activated alternately to avoid interference and ensure accurate detection of light after it passes through tissue.
-
+<figure>
+<div style="display: flex; justify-content: space-between; gap: 10%;">
 <figure>
     {{
         image(
@@ -118,10 +123,10 @@ Figure 3 illustrates an example of this two-in-one package in a compact sensor m
     }}
     <figcaption>Fig. 4b: Photodiode mechanism.</figcaption>
 </figure>
-
-*Figure 4: Core components for $\mathrm{SpO}\_{2}$ sensors. [1]*
-
-Figure 4 shows the basic principles behind an LED (Figure 4a) and a photodiode (Figure 4b), which are key components in $\mathrm{SpO}\_{2}$ sensors. In the LED, light is produced at the p-n junction, where electrons from the n-type region combine with holes in the p-type region. As these electrons drop from the conduction band to the valence band, they release energy as photons. The colour of the emitted light is determined by the bandgap energy ($E_g$) of the material used in the LED.
+</div>
+<figcaption>Figure 4: Core components for $\mathrm{SpO}_{2}$ sensors. [1]</figcaption>
+</figure>
+Figure 4 shows the basic principles behind an LED (Figure 4a) and a photodiode (Figure 4b), which are key components in $\mathrm{SpO}_{2}$ sensors. In the LED, light is produced at the p-n junction, where electrons from the n-type region combine with holes in the p-type region. As these electrons drop from the conduction band to the valence band, they release energy as photons. The colour of the emitted light is determined by the bandgap energy ($E_g$) of the material used in the LED.
 
 The photodiode, on the other hand, works in reverse bias mode. Here, light that hits the p-n junction generates electron-hole pairs. The depletion region at the junction becomes wider in reverse bias, which makes the photodiode more sensitive to incoming light. When photons with enough energy strike the junction, they excite electrons from the valence band to the conduction band, creating free electrons and holes. These charge carriers are then separated by the electric field in the depletion region, producing a photocurrent that matches the intensity of the light hitting the photodiode.
 
@@ -133,7 +138,7 @@ The photodiode, on the other hand, works in reverse bias mode. Here, light that 
             transparent=true
         )
     }}
-    <figcaption>Fig. 5: Popular materials for LEDs and PDs in $\mathrm{SpO}\_{2}$ sensors.</figcaption>
+    <figcaption>Fig. 5: Popular materials for LEDs and PDs in $\mathrm{SpO}_{2}$ sensors.</figcaption>
 </figure>
 
 Table 1 presents the materials commonly used for LEDs and photodiodes in $\mathrm{SpO}\_{2}$ sensors. Selecting appropriate materials is crucial for achieving the specific wavelengths necessary for accurate oxygen saturation measurements [5].
@@ -191,7 +196,7 @@ The use of organic semiconductors, thin-film transistors, and flexible printed c
             url='img/ramuz.webp'
         )
     }}
-    <figcaption>Fig. 7: Flexible PPG / $\mathrm{SpO}\_{2}$ finger-based sensor. [9]</figcaption>
+    <figcaption>Fig. 7: Flexible PPG / $\mathrm{SpO}_{2}$ finger-based sensor. [9]</figcaption>
 </figure>
 
 As flexible electronics continue to evolve, they offer promising opportunities for innovative wearable designs that can measure a range of biometric data while maintaining user comfort and enhancing sensor integration in everyday health-monitoring devices.
@@ -218,12 +223,12 @@ Future perspectives include advancements in flexible and stretchable electronics
 
 ## References
 
-[1] J. G. Webster, *Design of Pulse Oximeters*. CRC Press, 1997. doi: 10.1201/9780367802592.
-[2] W.-C. Kuo, T.-C. Wu, and J.-S. Wang, "Design and Application of a Flexible Blood Oxygen Sensing Array for Wearable Devices," *Micromachines*, vol. 13, no. 10, p. 1742, Oct. 2022, doi: 10.3390/mi13101742.
-[3] K. B. Kim and H. J. Baek, "Photoplethysmography in Wearable Devices: A Comprehensive Review of Technological Advances, Current Challenges, and Future Directions," *Electronics*, vol. 12, no. 13, p. 2923, Jul. 2023, doi: 10.3390/electronics12132923.
-[4] [Online]. Available: https://www.analog.com/media/en/technical-documentation/data-sheets/ADPD144RI.pdf
-[5] N. Morita and W. Iwasaki, "Design and Fabrication of a Thin and Micro-Optical Sensor for Rapid Prototyping," *Sensors*, vol. 23, no. 17, p. 7658, Sep. 2023, doi: 10.3390/s23177658.
-[6] "Apple Watch Teardown." Accessed: Oct. 29, 2024. [Online]. Available: https://www.ifixit.com/Teardown/Apple+Watch+Teardown/40655
-[7] Z. Zhang and R. Khatami, "Can we trust the oxygen saturation measured by consumer smartwatches?," *The Lancet Respiratory Medicine*, vol. 10, no. 5, pp. e47-e48, May 2022, doi: 10.1016/s2213-2600(22)00103-5.
-[8] R.-J. Shei, I. G. Holder, A. S. Oumsang, B. A. Paris, and H. L. Paris, "Wearable activity trackers—advanced technology or advanced marketing?," *European Journal of Applied Physiology*, vol. 122, no. 9, pp. 1975-1990, Apr. 2022, doi: 10.1007/s00421-022-04951-1.
+[1] J. G. Webster, *Design of Pulse Oximeters*. CRC Press, 1997. doi: 10.1201/9780367802592.\
+[2] W.-C. Kuo, T.-C. Wu, and J.-S. Wang, "Design and Application of a Flexible Blood Oxygen Sensing Array for Wearable Devices," *Micromachines*, vol. 13, no. 10, p. 1742, Oct. 2022, doi: 10.3390/mi13101742.\
+[3] K. B. Kim and H. J. Baek, "Photoplethysmography in Wearable Devices: A Comprehensive Review of Technological Advances, Current Challenges, and Future Directions," *Electronics*, vol. 12, no. 13, p. 2923, Jul. 2023, doi: 10.3390/electronics12132923.\
+[4] [Online]. Available: https://www.analog.com/media/en/technical-documentation/data-sheets/ADPD144RI.pdf\
+[5] N. Morita and W. Iwasaki, "Design and Fabrication of a Thin and Micro-Optical Sensor for Rapid Prototyping," *Sensors*, vol. 23, no. 17, p. 7658, Sep. 2023, doi: 10.3390/s23177658.\
+[6] "Apple Watch Teardown." Accessed: Oct. 29, 2024. [Online]. Available: https://www.ifixit.com/Teardown/Apple+Watch+Teardown/40655\
+[7] Z. Zhang and R. Khatami, "Can we trust the oxygen saturation measured by consumer smartwatches?," *The Lancet Respiratory Medicine*, vol. 10, no. 5, pp. e47-e48, May 2022, doi: 10.1016/s2213-2600(22)00103-5.\
+[8] R.-J. Shei, I. G. Holder, A. S. Oumsang, B. A. Paris, and H. L. Paris, "Wearable activity trackers—advanced technology or advanced marketing?," *European Journal of Applied Physiology*, vol. 122, no. 9, pp. 1975-1990, Apr. 2022, doi: 10.1007/s00421-022-04951-1.\
 [9] J. V. Dcosta, D. Ochoa, and S. Sanaur, "Recent Progress in Flexible and Wearable All Organic Photoplethysmography Sensors for SpO2 Monitoring," *Advanced Science*, vol. 10, no. 31, Sep. 2023, doi: 10.1002/advs.202302752.
