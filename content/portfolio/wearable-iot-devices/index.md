@@ -12,11 +12,6 @@ toc = true
 katex = true
 +++
 
-# Wearable IoT device for fitness tracking and monitoring
-
-Lucien GHEERBRANT
-25433424
-
 ## 1. Introduction
 
 Over the last few decades, electronic miniaturisation has reached unprecedented levels. What once required an entire lab now fits in our pocket as a smartphone. Likewise, the miniaturisation of sensors has transformed bulky medical equipment into devices like smartwatches. Instead of being confined to a hospital, patients can now receive real-time diagnoses while leading normal lives. Health tracking has also extended beyond medical care into fitness with the rise of smartwatches, rings, and other wearables. Sensors are now everywhere, and for good reason. These wearable devices are part of an integrated IoT ecosystem that tracks fitness activities and health metrics.
