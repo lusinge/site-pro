@@ -1,7 +1,7 @@
 +++
 authors = ["Lucien Gheerbrant"]
 title = "Failure Analysis and Scenario Probability in Gas Leak Containment Systems"
-description = "Boy, oh boy... Have you ever been struggling deciding if a picture is either that of a car, a horse or a deer?! Who has not? Well this project is for you!"
+description = "On the 23rd of November 2005, silane gas ignited inside a chamber of a photovoltaic cell fabrication plant, leading to an uncontrollable fire. Silane gas, essential for the manufacturing of silicon wafers in both semiconductor and photovoltaic fabrication plants, is stored in gas cylinders. The change of these cylinders is frequently needed as the gas pressure decreases during use. The cylinders must be retrieved from a “gas room” and then connected to link with a furnace chamber."
 date = 2024-11-10
 [taxonomies]
 tags = ["Risk Managament", "Management"]
