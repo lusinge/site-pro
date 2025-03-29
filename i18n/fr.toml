@@ -1,4 +1,4 @@
-language_name = "Français"  # Shown in language picker for multi-language sites.
+language_name = "🇫🇷"  # Shown in language picker for multi-language sites.
 date_locale = "fr_FR"
 full_stop = "."  # Used at the end of a sentence.
 
@@ -59,6 +59,7 @@ one_words = "$NUMBER mot"
 many_words = "$NUMBER mots"
 last_updated_on = "Mis à jour le $DATE"
 see_changes = "Voir les modifications"
+published = "Publié le"
 
 # Post body.
 table_of_contents = "Table des matières"
