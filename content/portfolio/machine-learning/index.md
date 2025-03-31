@@ -8,6 +8,7 @@ numbersections = true
 [taxonomies]
 tags = ["Machine Learning", "Python", "CNN", "MLP", "TensorFlow"]
 [extra]
+featured = true
 toc = true
 katex = true
 +++
