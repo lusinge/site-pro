@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="234.66666"
+   height="133.73724"
+   viewBox="0 0 234.66666 133.73725"
+   sodipodi:docname="demo.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="22.25109"
+     inkscape:cx="180.82261"
+     inkscape:cy="100.5344"
+     inkscape:window-width="1503"
+     inkscape:window-height="933"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4" />
+  <defs
+     id="defs1">
+    <color-profile
+       name="sGry"
+       xlink:href="data:application/vnd.iccprofile;base64,AAABaGxjbXMEIAAAbW50ckdSQVlYWVogB+IAAwAUAAkADgAdYWNzcE1TRlQAAAAAc2F3c2N0cmwAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1oYW5ku7piCLumsA/Jemm3Z6btwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZGVzYwAAAMAAAAAkY3BydAAAAOQAAAAid3RwdAAAAQgAAAAUY2hhZAAAARwAAAAsa1RSQwAAAUgAAAAgbWx1YwAAAAAAAAABAAAADGVuVVMAAAAIAAAAHABzAEcAcgB5bWx1YwAAAAAAAAABAAAADGVuVVMAAAAGAAAAHABDAEMAMAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDD8AAAXd///zJgAAB5AAAP2S///7of///aIAAAPcAADAcXBhcmEAAAAAAAMAAAACZmkAAPKnAAANWQAAE9AAAApb"
+       id="color-profile1" />
+    <color-profile
+       name="sRGB"
+       xlink:href="data:application/vnd.iccprofile;base64,AAAB4GxjbXMEIAAAbW50clJHQiBYWVogB+IAAwAUAAkADgAdYWNzcE1TRlQAAAAAc2F3c2N0cmwAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1oYW5keem/Vlo+AbaDI4VVRvdPqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKZGVzYwAAAPwAAAAkY3BydAAAASAAAAAid3RwdAAAAUQAAAAUY2hhZAAAAVgAAAAsclhZWgAAAYQAAAAUZ1hZWgAAAZgAAAAUYlhZWgAAAawAAAAUclRSQwAAAcAAAAAgZ1RSQwAAAcAAAAAgYlRSQwAAAcAAAAAgbWx1YwAAAAAAAAABAAAADGVuVVMAAAAIAAAAHABzAFIARwBCbWx1YwAAAAAAAAABAAAADGVuVVMAAAAGAAAAHABDAEMAMAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDD8AAAXd///zJgAAB5AAAP2S///7of///aIAAAPcAADAcVhZWiAAAAAAAABvoAAAOPIAAAOPWFlaIAAAAAAAAGKWAAC3iQAAGNpYWVogAAAAAAAAJKAAAA+FAAC2xHBhcmEAAAAAAAMAAAACZmkAAPKnAAANWQAAE9AAAApb"
+       id="color-profile2" />
+  </defs>
+  <g
+     id="g146"
+     transform="translate(-279.51767,-516.2556)">
+    <rect
+       style="fill:#ffbe6f;fill-opacity:1;stroke:none;stroke-width:1.78038;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       id="rect5"
+       width="234.66666"
+       height="58.666641"
+       x="279.51767"
+       y="516.25562" />
+    <text
+       id="text122"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,357.55249,550.92419)"><tspan
+         id="tspan122"
+         style="font-variant:normal;font-weight:normal;font-size:11px;font-family:Inter;writing-mode:lr-tb;fill:#000000 icc-color(sGry, 0);fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">Processor</tspan></text>
+  </g>
+  <g
+     id="g145"
+     transform="translate(-279.51767,-516.2556)">
+    <rect
+       style="fill:#99c1f1;fill-opacity:1;stroke:none;stroke-width:1.20042;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       id="rect5-7"
+       width="234.66663"
+       height="26.670542"
+       x="279.51767"
+       y="623.32227" />
+    <text
+       id="text123"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,351.37215,641.99281)"><tspan
+         id="tspan123"
+         style="font-variant:normal;font-weight:normal;font-size:11px;font-family:Inter;writing-mode:lr-tb;fill:#000000 icc-color(sGry, 0);fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">Memory bus</tspan></text>
+  </g>
+  <g
+     id="g144"
+     transform="translate(-326.69461,-516.59173)">
+    <g
+       id="g5">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.834966;stroke-linejoin:bevel;paint-order:markers stroke fill"
+         id="rect6"
+         width="0.7039783"
+         height="20.376118"
+         x="371.34262"
+         y="602.26892" />
+      <path
+         id="path117"
+         d="m 374.10243,616.70681 c 0,0 -2.40782,6.61544 -2.40782,6.61544 0,0 -2.40782,-6.61544 -2.40782,-6.61544"
+         style="fill:#000000 icc-color(sGry, 0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+      <path
+         id="path118"
+         d="m 374.10243,608.20717 c 0,0 -2.40782,-6.61544 -2.40782,-6.61544 0,0 -2.40782,6.61544 -2.40782,6.61544"
+         style="fill:#000000 icc-color(sGry, 0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    </g>
+    <text
+       id="text125"
+       xml:space="preserve"
+       x="335.34662"
+       y="593.59174"
+       style="font-size:16px;stroke-width:1.33333"><tspan
+         id="tspan125"
+         style="font-variant:normal;font-weight:normal;font-size:14.6667px;font-family:Inter;writing-mode:lr-tb;fill:#1e2534 icc-color(sRGB, 0.11764526, 0.14509583, 0.20391846);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
+         x="335.34662"
+         y="593.59174">IMEM port</tspan></text>
+  </g>
+  <g
+     id="g143"
+     transform="translate(-301.72703,-516.25507)">
+    <g
+       id="g4">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.818091;stroke-linejoin:bevel;paint-order:markers stroke fill"
+         id="rect6-5"
+         width="0.7039783"
+         height="19.560822"
+         x="487.99319"
+         y="602.79437" />
+      <path
+         id="path120"
+         d="m 490.75301,616.70681 c 0,0 -2.40782,6.61544 -2.40782,6.61544 0,0 -2.40782,-6.61544 -2.40782,-6.61544"
+         style="fill:#000000 icc-color(sGry, 0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+      <path
+         id="path121"
+         d="m 490.75301,608.20717 c 0,0 -2.40782,-6.61544 -2.40782,-6.61544 0,0 -2.40782,6.61544 -2.40782,6.61544"
+         style="fill:#000000 icc-color(sGry, 0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    </g>
+    <text
+       id="text127"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,448.67429,593.59174)"><tspan
+         id="tspan127"
+         style="font-variant:normal;font-weight:normal;font-size:11px;font-family:Inter;writing-mode:lr-tb;fill:#1e2534 icc-color(sRGB, 0.11764526, 0.14509583, 0.20391846);fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">DMEM port</tspan></text>
+  </g>
+</svg>
