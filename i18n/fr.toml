@@ -7,7 +7,6 @@ full_stop = "."  # Used at the end of a sentence.
 blog = "blog"
 archive = "archives"
 tags = "étiquettes"
-filter_by_tag = "Filtrer par étiquette"
 projects = "projets"
 about = "à propos"
 contact = "contact"
@@ -23,6 +22,7 @@ clear_search = "Effacer la recherche"  # Title of the X icon next to search inpu
 zero_results = "Aucun résultat trouvé"
 one_results = "$NUMBER résultat"  # "1 result"
 many_results = "$NUMBER résultats"  # "3 results"
+tags_title = "Étiquettes"
 
 # Navigation.
 read_more = "Lire plus"
@@ -45,6 +45,9 @@ reset_mode = "Réinitialiser le mode aux valeurs par défaut"
 toggle_toc = "Afficher/Masquer la table des matières"
 go_to_top = "Aller en haut de la page"
 go_to_comments = "Aller à la section des commentaires"
+filter_by_tag = "Filtrer selon les étiquettes"
+newest_to_oldest = "Du plus récent au plus ancien"
+oldest_to_newest = "Du plus ancien au plus récent"
 
 # Post metadata.
 by_author = "Par $AUTHOR"  # $AUTHOR will be replaced by the author(s).
@@ -59,7 +62,9 @@ one_words = "$NUMBER mot"
 many_words = "$NUMBER mots"
 last_updated_on = "Mis à jour le $DATE"
 see_changes = "Voir les modifications"
+date_format = "%A %d %B %Y"
 published = "Publié le"
+updated = "Édité le"
 
 # Post body.
 table_of_contents = "Table des matières"
@@ -70,7 +75,9 @@ copied = "Copié !"
 copy_code_to_clipboard = "Copier le code dans le presse-papier"
 
 # Footer: Powered by Zola and tabi.
-powered_by = "Propulsé par $ZOLA et $DUCKQUILL !"
+powered_by = "Propulsé par $ZOLA et $DUCKQUILL"
+and = "et"
+site_source = "Code du site"
 
 # 404 error.
 # https://welpo.github.io/tabi/404.html
@@ -85,6 +92,8 @@ show_original_quote = "Afficher la citation originale"
 show_translation = "Afficher la traduction"
 open_quotation_mark = "«"
 close_quotation_mark = "»"
+caution = "Attention"
+warning = "Avertissement"
 
 # Translations for stylised Atom feed.
 # https://welpo.github.io/tabi/atom.xml
