@@ -5,6 +5,7 @@ date = 2024-08-10
 [markdown]
 numbersections = true
 [taxonomies]
+tags = ["C++", "Python", "Computer Architecture", "RTL", "RISC-V"]
 [extra]
 featured = true
 toc = true
