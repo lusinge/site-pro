@@ -38,37 +38,46 @@
 			</p>
 		{%- endif -%}
 
-		<h1>{{ page.title }}</h1>
+	  <div id="title">
+		  <h1>{{ page.title }}</h1>
+    		{%- if page.extra.subtitle %}
+			  <subtitle>{{ page.extra.subtitle}}</subtitle>
+		  {%- endif %}
+    </div>
 
-		{%- if page.authors or config.extra.show_reading_time -%}
-			<p>
-				<small>
-					{%- if page.authors -%}
-						<span>{% include "partials/authors.html" -%}</span>
-						{%- if config.extra.show_reading_time -%}
-							<span> {{ config.extra.separator | default(value="•") }} </span>
-						{%- endif -%}
-					{%- endif -%}
-
-					{%- if config.extra.show_reading_time -%}
-						<span>{{ macros_translate::translate(key="minutes_read", number=page.reading_time, default="$NUMBER minute read", language_strings=language_strings) }}</span>
-						{%- if page.taxonomies -%}
-							<span> {{ config.extra.separator | default(value="•") }} </span>
-						{%- endif -%}
-					{%- endif -%}
-				</small>
-			</p>
-		{%- endif -%}
-
-		{%- if page.taxonomies -%}
-			{%- for name, taxon in page.taxonomies %}
-				<ul class="tags">
-					{%-for item in taxon -%}
-						<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
-					{%- endfor %}
-				</ul>
-			{%- endfor -%}
+		{%- if page.description %}
+			<description>{{ page.description | markdown | safe }}</description>
 		{%- endif %}
+
+	  <div>
+		    {%- if page.authors or config.extra.show_reading_time -%}
+			  <small>
+				  {%- if page.authors -%}
+					  <span>{% include "partials/authors.html" -%}</span>
+					  {%- if config.extra.show_reading_time -%}
+						  <span> {{ config.extra.separator | default(value="•") }} </span>
+					  {%- endif -%}
+				  {%- endif -%}
+
+				  {%- if config.extra.show_reading_time -%}
+					  <span>{{ macros_translate::translate(key="minutes_read", number=page.reading_time, default="$NUMBER minute read", language_strings=language_strings) }}</span>
+					  {%- if page.taxonomies -%}
+						  <span> {{ config.extra.separator | default(value="•") }} </span>
+					  {%- endif -%}
+				  {%- endif -%}
+			  </small>
+		  {%- endif -%}
+
+		  {%- if page.taxonomies -%}
+			  {%- for name, taxon in page.taxonomies %}
+				  <ul class="tags">
+					  {%-for item in taxon -%}
+						  <li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item, lang=lang) }}">{{ item }}</a></li>
+					  {%- endfor %}
+				  </ul>
+			  {%- endfor -%}
+		  {%- endif %}
+	  </div>
 	</div>
 
 	<div id="buttons-container">
@@ -117,7 +126,7 @@
 		{%- endif -%}
 		<a id="go-to-top" href="#top" title="{{ macros_translate::translate(key='go_to_top', default='Go to Top', language_strings=language_strings) }}"><i class="icon"></i></a>
 		{%- if config.extra.show_share_button -%}
-			<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='share', default='Share', language_strings=language_strings) }}"><i class="icon"></i></a>
+			<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}{% if page.description %}&text={{ page.description | urlencode }}{% endif %}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='share', default='Share', language_strings=language_strings) }}"><i class="icon"></i></a>
 		{%- endif -%}
 		{%- if config.extra.issues_url -%}
 			<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='file_an_issue', default='File an Issue', language_strings=language_strings) }}"><i class="icon"></i></a>
@@ -135,19 +144,22 @@
 	{{ page.content | safe }}
 </article>
 
-{% set citations = load_data(path=page.colocated_path ~ "references.bib", format="bibtex", required=false) %}
-{% if citations %}
-    <div id="references">
-    {% set has_references = citations.bibliographies | length > 0 %}
-    {% if has_references %}
-        <h2>References</h2>
-        <dl>
-        {% for citation in citations.bibliographies %}
-            {{ macros_references::ref(bibliography=citation,num=loop.index) }}
-        {% endfor %}
-        </dl>
+{% if page.extra.bibliography %}
+    {% set bibliography = page.extra.bibliography %}
+    {% set citations = load_data(path=page.colocated_path ~ bibliography, format="bibtex", required=false) %}
+    {% if citations %}
+        <div id="references">
+        {% set has_references = citations.bibliographies | length > 0 %}
+        {% if has_references %}
+            <h2>{{ macros_translate::translate(key="references", default="References", language_strings=language_strings) }}</h2>
+            <dl>
+            {% for citation in citations.bibliographies %}
+                {{ macros_references::ref(bibliography=citation,num=loop.index) }}
+            {% endfor %}
+            </dl>
+        {% endif %}
+        </div>
     {% endif %}
-    </div>
 {% endif %}
 
 {%- if page.extra.comments.id -%}

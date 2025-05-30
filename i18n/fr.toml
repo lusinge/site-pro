@@ -1,12 +1,22 @@
-language_name = "🇫🇷"  # Shown in language picker for multi-language sites.
+# Shown in language picker for multi-language sites
+language_name = "Français"
+# Tera date format used for listing posts
+# (post publication date, tag posts list...).
+# Not used in comments, "date_locale" is used instead.
+# See https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+date_format = "%d %B %Y"
 date_locale = "fr_FR"
 full_stop = "."  # Used at the end of a sentence.
 
 # Menu items.
-# Should match the names in config.extra.menu and config.extra.footer_menu.
+# Should match the names in config.extra.nav.links and config.extra.footer.links.
+Links = "Liens"
+Blog = "Blog"
+Demo = "Démo"
+Mods = "Mods"
+Coffee = "Café"
 blog = "blog"
 archive = "archives"
-tags = "étiquettes"
 projects = "projets"
 about = "à propos"
 contact = "contact"
@@ -16,44 +26,92 @@ sitemap = "plan du site"
 Resume = "CV"
 
 # Search.
-search = "Rechercher"
+search = "Recherche"
 search_icon_title = "Cliquez ou appuyez sur $SHORTCUT pour ouvrir la recherche"  # $SHORTCUT will be replaced with the actual keyboard shortcut.
 clear_search = "Effacer la recherche"  # Title of the X icon next to search input.
 zero_results = "Aucun résultat trouvé"
 one_results = "$NUMBER résultat"  # "1 result"
 many_results = "$NUMBER résultats"  # "3 results"
-tags_title = "Étiquettes"
 
-# Navigation.
-read_more = "Lire plus"
-one_posts = "$NUMBER article"
-many_posts = "$NUMBER articles"
-prev = "Précédent"  # As in "Previous" page.
-next = "Suivant"  # As in "Next" page.
-of = "sur"  # E.g. Page 1 "of" 3
-all_posts = "Tous les articles"
-all_tags = "Toutes les étiquettes"
-all_projects = "Tous les projets"
-featured_projects = "Projets à la une"
-language_selection = "Sélection de la langue"
-toggle_mode = "Basculer en mode $MODE"  # $MODE will be replaced by a value (or both) below.
-dark = "sombre"
-light = "clair"
-reset_mode = "Réinitialiser le mode aux valeurs par défaut"
+all_tags = "Afficher tous les tags"
+archived = "Archivé"
+author = "Auteur"
+author_conjunction = " et "
+author_separator = ", "
+backlinks = "Backlinks"
+blog_post_author = "Auteur.ice de l'article de blog"
+boosts_from = "Boosts sur $INSTANCE"
+by_author = "Par $AUTHOR"
+caution = "Attention"
+comments = "Commentaires"
+comments_description = "Vous pouvez commenter cet article de blog en y répondant publiquement, avec votre compte Mastodon ou tout autre compte ActivityPub/Fediverse. Les réponses publiques détectées sont affichées ci-dessous."
+comments_noscript = "Afficher les commentaires nécessite JavaScript. Essayez d'activer JavaScript et rafraîchir la page, ou consultez le post sur Mastodon."
+comments_qr = "QR code vers un post sur Mastodon"
+copy_code = "Code de copie"
+copied = "Copié !"
+copy_code_to_clipboard = "Copier le code dans le presse-papier"
+disclaimer = "Décharge"
+draft = "BROUILLON"
+drafted = "Rédigé"
+faves_from = "Favoris sur $INSTANCE"
+featured = "À la une"
+feed = "Feed"
+file_an_issue = "Ouvrir un ticket"
+filter_by_tag = "Filtrer par tag"
+first = "Premier"
+go_to_top = "Aller au début"
+hot = "Hot"
+important = "Important"
+language = "Langue"
+last = "Dernier"
+load_comments = "Charger les commentaires"
+loading = "Chargement"
+many_minutes_read = "$NUMBER min. de lecture"
+many_posts = "$NUMBER posts au total"
+many_tags = "$NUMBER tags au total"
+minutes_read = "$NUMBER min. de lecture"
+more_matches = "$MATCHES matchs de plus"
+next = "Suivant"
+no_comments = "Aucun commentaire"
+note = "Note"
+one_posts = "$NUMBER post au total"
+one_tags = "$NUMBER tag au total"
+open_post = "Visiter le post"
+poor = "Poor"
+posts = "$NUMBER posts au total"
+posts_with_tag = "Posts avec le tag $TAG"
+powered_by = "Créé avec $ZOLA et $DUCKQUILL"
+previous = "Précédent"
+published = "Publié le"
+reload = "Recharger"
+repo = "Repository"
+search_for = "Rechercher"
+sensitive = "Contenu sensible"
+share = "Partager"
+skip_to_content = "Sauter au contenu principal"
+source = "Code source"
+table_of_contents = "Table des matières"
+tags = "tags"
+tags_title = "Tags"
+theme = "Thème"
+theme_dark = "Passer au thème Dark"
+theme_light = "Passer au thème Light"
+theme_system = "Utiliser le thème du système"
+tip = "Pourboire"
+trigger_warning = "Avertissement"
+updated = "Mis à jour le"
+view_comment = "Voir le commentaire"
+view_profile = "Voir le profil"
+warning = "Attention"
+references = "Réferences"
 
 # Quick navigation buttons.
 toggle_toc = "Afficher/Masquer la table des matières"
-go_to_top = "Aller en haut de la page"
 go_to_comments = "Aller à la section des commentaires"
-filter_by_tag = "Filtrer selon les étiquettes"
 newest_to_oldest = "Du plus récent au plus ancien"
 oldest_to_newest = "Du plus ancien au plus récent"
 
 # Post metadata.
-by_author = "Par $AUTHOR"  # $AUTHOR will be replaced by the author(s).
-author_separator = ", "  # For multiple authors. Ensure spacing where necessary.
-author_conjunction = " et "  # For multiple authors. Ensure spacing where necessary.
-draft = "BROUILLON"
 zero_min_read = "<1 min de lecture"
 one_min_read = "$NUMBER min de lecture"
 many_min_read = "$NUMBER min de lecture"
@@ -62,20 +120,10 @@ one_words = "$NUMBER mot"
 many_words = "$NUMBER mots"
 last_updated_on = "Mis à jour le $DATE"
 see_changes = "Voir les modifications"
-date_format = "%A %d %B %Y"
-published = "Publié le"
-updated = "Édité le"
 
 # Post body.
-table_of_contents = "Table des matières"
-load_comments = "Afficher les commentaires"
-
-# Copy code block button.
-copied = "Copié !"
-copy_code_to_clipboard = "Copier le code dans le presse-papier"
 
 # Footer: Powered by Zola and tabi.
-powered_by = "Propulsé par $ZOLA et $DUCKQUILL"
 and = "et"
 site_source = "Code du site"
 
@@ -92,8 +140,6 @@ show_original_quote = "Afficher la citation originale"
 show_translation = "Afficher la traduction"
 open_quotation_mark = "«"
 close_quotation_mark = "»"
-caution = "Attention"
-warning = "Avertissement"
 
 # Translations for stylised Atom feed.
 # https://welpo.github.io/tabi/atom.xml

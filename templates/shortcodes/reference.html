@@ -1,4 +1,9 @@
-{% set citations = load_data(path=page.colocated_path ~ "references.bib", format="bibtex", required=false) %}
+{% if page.extra.bibliography %}
+    {% set bibliography = page.extra.bibliography %}
+{% else %}
+    {{ throw(message = "No bibliography is set.") }}
+{% endif %}
+{% set citations = load_data(path=page.colocated_path ~ bibliography, format="bibtex", required=false) %}
 {% if citations %}
     {% for bib in citations.bibliographies %}
         {% if bib.citation_key == key %}

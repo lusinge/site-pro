@@ -11,11 +11,8 @@ tags = ["Machine Learning", "Python", "CNN", "MLP", "TensorFlow"]
 featured = true
 toc = true
 katex = true
+bibliography = "references.bib"
 +++
-
-Boy, oh boy... Have you ever been struggling deciding if a picture is either that of a car, a horse or a deer?! Who has not? Well this project is for you!
-
----
 
 ## Introduction
 

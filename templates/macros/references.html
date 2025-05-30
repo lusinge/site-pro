@@ -1,104 +1,191 @@
 {% macro bibstrip(in) %}
-    {{ in | replace(from="---",to="—") | replace(from="--", to="-") | replace(from="{",to="") | replace(from="}", to="") | safe }}
-{% endmacro bibstrip %}
-
-{% macro bib_book(ref) %}
-    {{ ref.tags.author }}, 
-    <em>{{ ref.tags.title }}</em>, 
-    {{ ref.tags.publisher }}, 
-    {{ ref.tags.year }}
-{% endmacro bib_book %}
+    {{ in
+        | replace(from="---", to="—")
+        | replace(from="--",  to="-")
+        | replace(from="{",   to="")
+        | replace(from="}",   to="")
+        | safe }}
+{% endmacro %}
 
 {% macro bib_article(ref) %}
-    {{ ref.tags.author }}, 
+    {{ ref.tags.author }},
     "{{ ref.tags.title }}",
-    {% if ref.tags.journal %}
-    <em>{{ ref.tags.journal }}</em>, 
-    {% endif %}
-    {% if ref.tags.volume %}
-    vol. {{ ref.tags.volume }}, 
-    {% endif %}
-    {% if ref.tags.number %}
-    {{ ref.tags.number}}, 
-    {% endif %}
-    {% if ref.tags.pages %}
-    pp. {{ ref.tags.pages }},
-    {% endif %}
-    {% if ref.tags.month %}
-    {{ ref.tags.month }}
-    {% endif %}
-    {{ ref.tags.year }}
-{% endmacro bib_article %}
+    <em>{{ ref.tags.journal }}</em>,
+    {% if ref.tags.volume %}vol. {{ ref.tags.volume }}, {% endif %}
+    {% if ref.tags.number %}no. {{ ref.tags.number }}, {% endif %}
+    {% if ref.tags.pages  %}pp. {{ ref.tags.pages }}, {% endif %}
+    {% if ref.tags.month  %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_book(ref) %}
+    {%- if ref.tags.author -%}
+      {{ ref.tags.author }}
+    {%- elif ref.tags.editor -%}
+      ed. {{ ref.tags.editor }}
+    {%- endif -%},
+    <em>{{ ref.tags.title }}</em>,
+    {% if ref.tags.volume   %}vol. {{ ref.tags.volume }}, {% elif ref.tags.number %}no. {{ ref.tags.number }}, {% endif %}
+    {% if ref.tags.series   %}{{ ref.tags.series   }}, {% endif %}
+    {% if ref.tags.publisher%}{{ ref.tags.publisher}}, {% endif %}
+    {% if ref.tags.address  %}{{ ref.tags.address  }}, {% endif %}
+    {% if ref.tags.edition  %}{{ ref.tags.edition }} ed., {% endif %}
+    {% if ref.tags.month    %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_booklet(ref) %}
+    <em>{{ ref.tags.title }}</em>,
+    {% if ref.tags.author       %}{{ ref.tags.author       }}, {% endif %}
+    {% if ref.tags.howpublished %}{{ ref.tags.howpublished }}, {% endif %}
+    {% if ref.tags.address      %}{{ ref.tags.address      }}, {% endif %}
+    {% if ref.tags.month        %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_inbook(ref) %}
+    {%- if ref.tags.author -%}
+      {{ ref.tags.author }}
+    {%- elif ref.tags.editor -%}
+      ed. {{ ref.tags.editor }}
+    {%- endif -%},
+    <em>{{ ref.tags.title }}</em>,
+    {% if ref.tags.chapter %}chap. {{ ref.tags.chapter }}, {% endif %}
+    {% if ref.tags.pages   %}pp. {{ ref.tags.pages   }}, {% endif %}
+    {% if ref.tags.volume  %}vol. {{ ref.tags.volume }}, {% elif ref.tags.number %}no. {{ ref.tags.number }}, {% endif %}
+    {% if ref.tags.series  %}{{ ref.tags.series  }}, {% endif %}
+    {% if ref.tags.type    %}{{ ref.tags.type    }}, {% endif %}
+    {% if ref.tags.publisher%}{{ ref.tags.publisher}}, {% endif %}
+    {% if ref.tags.address  %}{{ ref.tags.address  }}, {% endif %}
+    {% if ref.tags.edition  %}{{ ref.tags.edition }} ed., {% endif %}
+    {% if ref.tags.month    %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_incollection(ref) %}
+    {{ ref.tags.author }},
+    "{{ ref.tags.title }}",
+    in <em>{{ ref.tags.booktitle }}</em>,
+    {% if ref.tags.editor   %}ed. {{ ref.tags.editor   }}, {% endif %}
+    {% if ref.tags.volume   %}vol. {{ ref.tags.volume   }}, {% endif %}
+    {% if ref.tags.number   %}no. {{ ref.tags.number   }}, {% endif %}
+    {% if ref.tags.series   %}{{ ref.tags.series   }}, {% endif %}
+    {% if ref.tags.type     %}{{ ref.tags.type     }}, {% endif %}
+    {% if ref.tags.chapter  %}chap. {{ ref.tags.chapter }}, {% endif %}
+    {% if ref.tags.pages    %}pp. {{ ref.tags.pages   }}, {% endif %}
+    {% if ref.tags.publisher%}{{ ref.tags.publisher}}, {% endif %}
+    {% if ref.tags.address  %}{{ ref.tags.address  }}, {% endif %}
+    {% if ref.tags.edition  %}{{ ref.tags.edition }} ed., {% endif %}
+    {% if ref.tags.month    %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
 
 {% macro bib_inproceedings(ref) %}
-    {{ ref.tags.author }}, 
-    "{{ ref.tags.title }}," 
-    in <em>{{ ref.tags.booktitle }}</em>, 
-    {{ ref.tags.address }},
-    {{ ref.tags.year }}, 
-    pp. {{ ref.tags.pages }}
-{% endmacro bib_inproceedings %}
+    {{ ref.tags.author }},
+    "{{ ref.tags.title }}",
+    in <em>{{ ref.tags.booktitle }}</em>,
+    {% if ref.tags.editor       %}ed. {{ ref.tags.editor       }}, {% endif %}
+    {% if ref.tags.volume       %}vol. {{ ref.tags.volume       }}, {% elif ref.tags.number %}no. {{ ref.tags.number }}, {% endif %}
+    {% if ref.tags.series       %}{{ ref.tags.series       }}, {% endif %}
+    {% if ref.tags.pages        %}pp. {{ ref.tags.pages        }}, {% endif %}
+    {% if ref.tags.organization %}{{ ref.tags.organization }}, {% endif %}
+    {% if ref.tags.publisher    %}{{ ref.tags.publisher    }}, {% endif %}
+    {% if ref.tags.address      %}{{ ref.tags.address      }}, {% endif %}
+    {% if ref.tags.month        %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
 
 {% macro bib_manual(ref) %}
-    {{ ref.tags.author }}, 
+    {%- if ref.tags.author -%}
+      {{ ref.tags.author }}
+    {%- elif ref.tags.editor -%}
+      ed. {{ ref.tags.editor }}
+    {%- endif -%},
     <em>{{ ref.tags.title }}</em>,
-    {{ ref.tags.organization }},
-    {{ ref.tags.address }}, 
-    {% if ref.tags.edition %}{{ ref.tags.edition }},{% endif %}
-    {% if ref.tags.month %}{{ ref.tags.month }}{% endif %}
-    {{ ref.tags.year }}.
-{% endmacro bib_manual %}
-
-{% macro bib_thesis(ref, type) %}
-    {{ ref.tags.author }}, 
-    "{{ ref.tags.title }}," 
-    {{ type }},
-    {{ ref.tags.school }},
-    {{ ref.tags.address }}, 
-    {{ ref.tags.year }}
-{% endmacro bib_thesis %}
+    {% if ref.tags.organization%}{{ ref.tags.organization}}, {% endif %}
+    {% if ref.tags.address     %}{{ ref.tags.address     }}, {% endif %}
+    {% if ref.tags.edition     %}{{ ref.tags.edition }} ed., {% endif %}
+    {% if ref.tags.month       %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
 
 {% macro bib_mastersthesis(ref) %}
-    {{ self::bib_thesis(ref=ref,type="M.S. Thesis") }}
-{% endmacro bib_mastersthesis %}
+    {{ ref.tags.author }},
+    "{{ ref.tags.title }}",
+    M.S. thesis,
+    {{ ref.tags.school }},
+    {% if ref.tags.address %}{{ ref.tags.address }}, {% endif %}
+    {% if ref.tags.month   %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
 
 {% macro bib_phdthesis(ref) %}
-    {{ self::bib_thesis(ref=ref,type="Ph.D. dissertation") }}
-{% endmacro bib_phdthesis %}
+    {{ ref.tags.author }},
+    "{{ ref.tags.title }}",
+    Ph.D. dissertation,
+    {{ ref.tags.school }},
+    {% if ref.tags.address %}{{ ref.tags.address }}, {% endif %}
+    {% if ref.tags.month   %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
 
 {% macro bib_misc(ref) %}
-    {% if ref.tags.author %}{{ ref.tags.author }},{% endif %}
-    {{ ref.tags.title }},
-    {% if ref.tags.publisher %}{{ ref.tags.publisher }},{% endif %}
-    {% if ref.tags.year %}{{ ref.tags.year }},{% endif %}
-    {% if ref.tags.doi %}
-        <a href="https://doi.org/{{ ref.tags.doi }}">{{ ref.tags.doi }}</a>
-    {% elif ref.tags.url %}
-        <a href="{{ ref.tags.url }}" target="_blank">{{ ref.tags.url }}</a>
-    {% endif %}
-{% endmacro bib_misc %}
+    {% if ref.tags.author       %}{{ ref.tags.author       }}, {% endif %}
+    {% if ref.tags.title        %}<em>{{ ref.tags.title }}</em>, {% endif %}
+    {% if ref.tags.howpublished %}{{ ref.tags.howpublished }}, {% endif %}
+    {% if ref.tags.month        %}{{ ref.tags.month }} {% endif %}{% if ref.tags.year %}{{ ref.tags.year }}{% endif %}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_proceedings(ref) %}
+    {% if ref.tags.editor       %}ed. {{ ref.tags.editor       }}, {% endif %}
+    <em>{{ ref.tags.title }}</em>,
+    {% if ref.tags.volume       %}vol. {{ ref.tags.volume       }}, {% elif ref.tags.number %}no. {{ ref.tags.number }}, {% endif %}
+    {% if ref.tags.series       %}{{ ref.tags.series       }}, {% endif %}
+    {% if ref.tags.organization %}{{ ref.tags.organization }}, {% endif %}
+    {% if ref.tags.publisher    %}{{ ref.tags.publisher    }}, {% endif %}
+    {% if ref.tags.address      %}{{ ref.tags.address      }}, {% endif %}
+    {% if ref.tags.month        %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_techreport(ref) %}
+    {{ ref.tags.author }},
+    <em>{{ ref.tags.title }}</em>,
+    {% if ref.tags.type        %}{{ ref.tags.type        }}, {% endif %}
+    {{ ref.tags.institution }},
+    {% if ref.tags.number     %}Tech. Rep. {{ ref.tags.number }}, {% endif %}
+    {% if ref.tags.address    %}{{ ref.tags.address    }}, {% endif %}
+    {% if ref.tags.month      %}{{ ref.tags.month }} {% endif %}{{ ref.tags.year }}{% if ref.tags.note %}, {{ ref.tags.note }}{% endif %}
+{% endmacro %}
+
+{% macro bib_unpublished(ref) %}
+    {{ ref.tags.author }},
+    "{{ ref.tags.title }}",
+    unpublished,
+    {{ ref.tags.note }},
+    {% if ref.tags.month %}{{ ref.tags.month }} {% endif %}{% if ref.tags.year %}{{ ref.tags.year }}{% endif %}
+{% endmacro %}
+
+{% macro bib_online(ref) %}
+    {%- if ref.tags.author -%}
+      {{ ref.tags.author }}
+    {%- elif ref.tags.editor -%}
+      ed. {{ ref.tags.editor }}
+    {%- endif -%},
+    <em>{{ ref.tags.title }}</em>,
+    {% if ref.tags.year     %}{{ ref.tags.year     }}, {% endif %}
+    {% if ref.tags.url      %}<a href="{{ ref.tags.url }}" target="_blank">{{ ref.tags.url }}</a>{% endif %}
+    {% if ref.tags.urldate  %} (accessed {{ ref.tags.urldate }}){% endif %}
+{% endmacro %}
 
 {% macro bib_ref(bibliography,num) %}
-    {% if bibliography.entry_type == "book" %}
-        {{ self::bib_book(ref=bibliography) }}
-    {% elif bibliography.entry_type == "article" %}
-        {{ self::bib_article(ref=bibliography) }}
-    {% elif bibliography.entry_type == "inproceedings" %}
-        {{ self::bib_inproceedings(ref=bibliography) }}
-    {% elif bibliography.entry_type == "misc" %}
-        {{ self::bib_misc(ref=bibliography) }}
-    {% elif bibliography.entry_type == "mastersthesis" %}
-        {{ self::bib_mastersthesis(ref=bibliography) }}
-    {% elif bibliography.entry_type == "phdthesis" %}
-        {{ self::bib_phdthesis(ref=bibliography) }}
-    {% elif bibliography.entry_type == "manual" %}
-        {{ self::bib_manual(ref=bibliography) }}
-    {% elif bibliography.entry_type == "githubissue" %}
-        {{ self::bib_githubissue(ref=bibliography) }}
-    {% else %}
-        unsupported reference type
-    {% endif %}
-{% endmacro bib_ref %}
+    {% if bibliography.entry_type == "article"      %}{{ self::bib_article     (ref=bibliography) }}
+    {% elif bibliography.entry_type == "book"        %}{{ self::bib_book        (ref=bibliography) }}
+    {% elif bibliography.entry_type == "booklet"     %}{{ self::bib_booklet     (ref=bibliography) }}
+    {% elif bibliography.entry_type == "inbook"      %}{{ self::bib_inbook      (ref=bibliography) }}
+    {% elif bibliography.entry_type == "incollection"%}{{ self::bib_incollection(ref=bibliography) }}
+    {% elif bibliography.entry_type == "inproceedings"%}{{ self::bib_inproceedings(ref=bibliography) }}
+    {% elif bibliography.entry_type == "manual"      %}{{ self::bib_manual      (ref=bibliography) }}
+    {% elif bibliography.entry_type == "mastersthesis"%}{{ self::bib_mastersthesis(ref=bibliography) }}
+    {% elif bibliography.entry_type == "phdthesis"   %}{{ self::bib_phdthesis   (ref=bibliography) }}
+    {% elif bibliography.entry_type == "misc"        %}{{ self::bib_misc        (ref=bibliography) }}
+    {% elif bibliography.entry_type == "proceedings" %}{{ self::bib_proceedings (ref=bibliography) }}
+    {% elif bibliography.entry_type == "techreport"  %}{{ self::bib_techreport  (ref=bibliography) }}
+    {% elif bibliography.entry_type == "unpublished" %}{{ self::bib_unpublished (ref=bibliography) }}
+    {% elif bibliography.entry_type == "online"      %}{{ self::bib_online      (ref=bibliography) }}
+    {% else %}unsupported reference type{% endif %}
+{% endmacro %}
+
 
 {% macro ref(bibliography,num) %}
     <dt class="ref-num" id="bibref-{{ bibliography.citation_key }}">[{{ num }}]</dt>
