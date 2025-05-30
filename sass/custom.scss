@@ -4,7 +4,9 @@
 body {
 		font-family: Inter, sans-serif;
 		font-feature-settings: "ss02";
-		hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
 }
 
 h1,
