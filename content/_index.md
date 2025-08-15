@@ -21,4 +21,4 @@
 </center>
 
 # About me
-I am <mark>**Lucien Gheerbrant**</mark>, an recent graduate of the <mark>**École&nbsp;des&nbsp;Mines&nbsp;de&nbsp;Saint-Étienne**&nbsp;(<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> and the <mark>**University&nbsp;of&nbsp;Technology Sydney**&nbsp;(<abbr title="University of Technology Sydney">UTS</abbr>)</mark>.
+I am <mark>**Lucien Gheerbrant**</mark>, a recent graduate of the <mark>**École des Mines de Saint-Étienne** (<abbr title="École des Mines de Saint-Étienne">EMSE</abbr>)</mark> and the <mark>**University of Technology Sydney** (<abbr title="University of Technology Sydney">UTS</abbr>)</mark>.
