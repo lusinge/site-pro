@@ -1,1 +1,0 @@
-{"rule":"MORFOLOGIK_RULE_EN_AU","sentence":"^\\Q+++ authors = \"Lucien Gheerbrant\" title = \"C++ modelling of a custom RISC-V core\" date = 2024-08-10 markdown numbersections = true taxonomies extra featured = true toc = true katex = true +++\\E$"}
