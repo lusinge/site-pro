@@ -72,7 +72,6 @@ styles = ["custom.css"]
 icons = true
 
 links = [
-  { url = "@/resume/_index.md", name = "Resume" },
   { url = "@/portfolio/_index.md", name = "Portfolio" },
 ]
 # Whether to show the Atom/RSS feed button in the nav
