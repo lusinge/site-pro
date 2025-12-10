@@ -3,6 +3,7 @@ authors = ["Lucien Gheerbrant"]
 title = "CMOS inverter"
 date = 2024-08-15
 description = "An introductory lab to SPICE software."
+weight = 1
 [markdown]
 numbersections = true
 [taxonomies]

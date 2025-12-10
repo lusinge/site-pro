@@ -3,6 +3,7 @@ authors = ["Lucien Gheerbrant", "Pierre-Louis Audelan-Ameline"]
 title = "Machine Learning & Image Recognition"
 description = "Boy, oh boy... Have you ever been struggling deciding if a picture is either that of a car, a horse or a deer?! Who has not? Well this project is for you!"
 date = 2023-12-12
+weight = 0
 [markdown]
 numbersections = true
 [taxonomies]

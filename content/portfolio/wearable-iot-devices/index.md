@@ -3,6 +3,7 @@ authors = ["Lucien Gheerbrant"]
 title = "Wearable IoT device for fitness tracking and monitoring"
 description = "A focus on SpO2, electronic devices and packaging"
 date = 2024-10-28
+weight = 1
 [markdown]
 numbersections = true
 [taxonomies]

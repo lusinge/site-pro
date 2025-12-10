@@ -3,6 +3,7 @@ authors = ["Lucien Gheerbrant"]
 title = "Using S-Edit (Schematic Entry Tool) & T-SPICE (Analog Simulation Tool)"
 date = 2024-08-09
 description = "An introductory lab to SPICE software."
+weight = 1
 [markdown]
 numbersections = true
 [taxonomies]

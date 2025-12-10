@@ -3,6 +3,7 @@ authors = ["Lucien Gheerbrant"]
 title = "Failure Analysis and Scenario Probability in Gas Leak Containment Systems"
 description = "On the 23rd of November 2005, silane gas ignited inside a chamber of a photovoltaic cell fabrication plant, leading to an uncontrollable fire."
 date = 2024-11-10
+weight = 1
 [taxonomies]
 tags = ["Risk Managament", "Management"]
 [extra]

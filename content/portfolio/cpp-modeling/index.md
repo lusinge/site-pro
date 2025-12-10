@@ -2,6 +2,7 @@
 authors = ["Lucien Gheerbrant"]
 title = "C++ modelling of a custom RISC-V core"
 date = 2024-08-10
+weight = 0
 [markdown]
 numbersections = true
 [taxonomies]
