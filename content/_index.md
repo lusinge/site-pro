@@ -21,4 +21,4 @@
 </center>
 
 # About me
-I am <mark>**Lucien Gheerbrant**</mark>, a recent graduate of the <mark>**École&nbsp;des&nbsp;Mines&nbsp;de&nbsp;Saint‑Étienne**</mark> and the <mark>**University&nbsp;of&nbsp;Technology&nbsp;Sydney**</mark>.
+I am <mark>**Lucien Gheerbrant**</mark>, a research engineer at <mark>Huawei</mark>.

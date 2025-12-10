@@ -21,4 +21,4 @@
 </center>
 
 # À propos de moi
-Je suis <mark>**Lucien Gheerbrant**</mark>, un jeune diplômé en ingénierie de l'<mark>**École&nbsp;des&nbsp;Mines&nbsp;de&nbsp;Saint‑Étienne**</mark> et de <mark>l'**Université&nbsp;Technologique&nbsp;de&nbsp;Sydney**</mark>.
+Je suis <mark>**Lucien Gheerbrant**</mark>, un ingénieur de recherche chez <mark>Huawei</mark>
