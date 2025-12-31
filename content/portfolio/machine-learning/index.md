@@ -206,16 +206,17 @@ Pretty much the same results as Logistic Regression. Pretty nice[^accuracy]!
 
 If we do not want to gloss over overfitting/underfitting problems, we need to compare the accuracy of the model on the train set with the accuracy on the test set. If the train values are way higher than the test values, the model would be overfitting.
 {% crt() %}
-    ```
-    --- Training Values ---
-    Logistic Regression Accuracy: 0.6327083333333333
-    Naive Bayes Classifier Accuracy: 0.5833333333333334
-    
-    --- Testing Values ---
-    Logistic Regression Accuracy: 0.6097222222222223
-    Naive Bayes Classifier Accuracy: 0.5966666666666667
-    ```
+```
+--- Training Values ---
+Logistic Regression Accuracy: 0.6327083333333333
+Naive Bayes Classifier Accuracy: 0.5833333333333334
+
+--- Testing Values ---
+Logistic Regression Accuracy: 0.6097222222222223
+Naive Bayes Classifier Accuracy: 0.5966666666666667
+```
 {% end %}
+
 The LR training accuracy is slightly above, with a 3.6 % variation.
 However, this is low enough to say that there is no overfitting in both
 of these models.
