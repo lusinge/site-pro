@@ -21,4 +21,4 @@
 </center>
 
 # About me
-I am <mark>**Lucien Gheerbrant**</mark>, a french research engineer at <mark>**Huawei**</mark>.
+I am <mark>**Lucien Gheerbrant**</mark>, an french-american research engineer at <mark>**Huawei**</mark>.
