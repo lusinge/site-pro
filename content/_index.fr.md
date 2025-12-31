@@ -21,4 +21,4 @@
 </center>
 
 # À propos de moi
-Je suis <mark>**Lucien Gheerbrant**</mark>, un ingénieur de recherche chez <mark>Huawei</mark>
+Je suis <mark>**Lucien Gheerbrant**</mark>, un ingénieur de recherche chez <mark>**Huawei**</mark>
