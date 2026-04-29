@@ -21,4 +21,6 @@
 </center>
 
 # À propos de moi
-Je suis <mark>**Lucien Gheerbrant**</mark>, un ingénieur de recherche chez <mark>**Huawei**</mark>
+Je suis <mark>**Lucien Gheerbrant**</mark>. J'aime les ordinateurs, le dessin et
+l'animation. Je travaille actuellement comme ingénieur de recherche en HW/SW 
+co-design.

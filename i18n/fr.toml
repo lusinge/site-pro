@@ -1,5 +1,5 @@
 # Shown in language picker for multi-language sites
-language_name = "Français"
+language_name = "🇫🇷"
 # Tera date format used for listing posts
 # (post publication date, tag posts list...).
 # Not used in comments, "date_locale" is used instead.
